@@ -39,7 +39,7 @@ const TravelPlanGenerator: React.FC<TravelPlanGeneratorProps> = ({
 }) => {
   const [isGenerating, setIsGenerating] = useState<boolean>(false)
 
-  const generateActivities = (day: number): Activity[] => {
+  const generateActivities = (_day: number): Activity[] => {
     const activities: Activity[] = []
     const dailyBudget = budget / duration
 
